@@ -1,0 +1,215 @@
+/*@font-face { font-family: 'Orbitron'; src: url(http://www.tlotrblog.zz.vc/fonts/orbitron-light.otf) }
+@font-face { font-family: Ubuntu; src: url(http://www.tlotrblog.zz.vc/fonts/Ubuntu-R.ttf) }*/
+
+* { padding: 0; margin: 0 }
+html { height: 100%; }
+body { padding: 0; margin: 0; font-family: Arial, Helvetica, "lucida sans unicode", 'Helvetica Neue'; font-size: 14px; background-color: #000000; color: #FFF; height: 100% }
+a:link { color: white; text-decoration: none }
+a:active { color: white; text-decoration: none }
+a:visited { color: white; text-decoration: none }
+a:hover { color: brown; text-decoration: none }
+.logo { padding-top: 5px; height: 90px; width: 1000px; margin-left: auto; margin-right: auto }
+.logo table { width: 100% }
+.logo td li { list-style: none; display: inline-block; padding-right: 10px }
+.nav { width: 100%; z-index: 150; position: relative; background-color: #000; border-top: 1px; border-top-style: solid; border-top-color: #20211F; border-bottom: 1px; border-bottom-style: solid; border-bottom-color: #20211F; opacity: 0.8;-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; filter: alpha(opacity=80); -moz-opacity: 0.8; -khtml-opacity: 0.8; }
+.subNav { width: 1000px; margin-left: auto; margin-right: auto }
+.subNav ul { width: 100%; height: 30px}
+.subNav li { list-style: none; display: inline-block; padding: 5px 40px; font-size: 17px; font-family: Arial }
+.nav li { -webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s; -ms-transition: background 0.3s linear 0s, color 0.3s linear 0s; transition: background 0.3s linear 0s, color 0.3s linear 0s; }
+.nav li:hover { background-color: #6F8A00; color: white }
+.wrapper { margin-top: 15px; margin-left: 15px; margin-right: 15px }
+.wrapper { width: 1000px; margin-left: auto; margin-right: auto; min-height: 100% }
+.body { width: 975px; margin-left: auto; margin-right: auto; margin-bottom: 5px; overflow: auto; padding-bottom: 80px }
+hr { color: #0C0D0D; }
+
+/* Everything below until next comment are css for displaying the posts  */
+
+.posts { width: 100%; margin: 0 }
+.user { font-size: 20px }
+.underline { color: #6F8A00; font-family: 'Orbitron'; letter-spacing: 0.1em; }
+.msg { border: 0px solid blue; vertical-align: top; text-align: justify }
+.left { background-color: #111111; width: 180px; text-align: center; padding-top: 10px; vertical-align: top; border-bottom: 5px solid #000 }
+.right { background-color: #1E1E1E; width: 650px; padding-top: 15px; padding-right: 10px; padding-left: 15px; padding-bottom: 10px; 	border-bottom: 5px solid #000; vertical-align: top }
+.title { font-family: 'Orbitron', 'lucida sans unicode'; font-size: 1.3em; padding-top: 0px; padding-bottom: 10px; padding-left: 10px; 	padding-right: 10px; margin-bottom: 3px; border-bottom: 1px solid #000; vertical-align: top; letter-spacing: 0.1em; text-transform: capitalize; line-height: 1.4em; font-weight: bold }
+.message { font-family: ubuntu; margin-top: 10px;  margin-bottom: 15px;	padding-left: 10px; padding-right: 15px; line-height: 2em; vertical-align: top; color: #BBBBBB; font-size: 0.9em; letter-spacing: 0.01em }
+.attach { height: 30px; padding-top: 10px }
+
+/* Below is the css style for heading class / H2 tags */
+
+.heading { color: #527DFF; font-size: 24px; padding-left: 15px }
+
+/* Everything below until the next comment are css for the login page */
+
+#user { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 220px; }
+#pass { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 220px; }
+#log_in td { padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px; -webkit-transition: background 0.3s linear 0s, color 0.3s linear 0s; -ms-transition: background 0.3s linear 0s, color 0.3s linear 0s; transition: background 0.3s linear 0s, color 0.3s linear 0s; }
+#login { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; }
+#login:hover { background-color: #6F8A00; color: #000; }
+
+/* Below css style are for displaying the errors */
+
+.errors { list-style-type: none }
+.error { border: 1px solid red/*#030*/; margin-bottom: 5px; padding: 5px 10px; color: red /*#0C0*/ }
+
+/* Everything below until the next comment are css styles for Register page */
+
+#reg td { padding-left: 15px; padding-right: 15px; padding-bottom: 15px; padding-top: 0px }
+#username, #password, #password2, #fname, #lname, #email, #gender, #avatar { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 220px; }
+#avatar:hover { background-color: #6F8A00; color: #000; }
+#register { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB }
+#register:hover { background-color: #6F8A00; color: #000; }
+
+/* Everything below until next comment are css for Add Post and Edit Post */
+
+#add_post td { padding: 0 0 10px 15px }
+.le_ft { font-size: 14px; color: #1ABAFF }
+#title { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 750px;	font-size: 13px }
+#content { background-color: #000; border: 1px solid #6F8A00; color: #BBB; padding-left: 5px; padding-top: 10px; padding-right: 10px; 	padding-bottom: 5px; width: 744px; height: 450px; font-size: 13px; overflow-x: hidden; overflow-y: auto; resize: none; word-wrap: break-word }
+#upload { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 750px; }
+#upload:hover { background-color: #6F8A00; color: #000; }
+#submit { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB }
+#submit:hover { background-color: #6F8A00; color: #000; }
+
+/* The below css style is used in user php file */
+
+.u_left { width: 180px }
+.u_right { text-align: left; vertical-align: top; padding-left: 20px }
+
+/* The below css style is for change password file */
+
+#cg_pass td { padding: 0 0 10px 15px }
+#old_pass, #new_pass, #new_pass_2 { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; width: 270px; }
+#submit_pass { padding: 5px; border: 1px solid #6F8A00; background-color: #000; color: #BBB }
+#submit_pass:hover { background-color: #6F8A00; color: #000; }
+
+/* The below css style is for Change Avatar input field */
+
+#img { padding: 3px 10px; border: 1px solid #6F8A00; background-color: #000; color: #BBB; }
+#img:hover { background-color: #6F8A00; color: #000; }
+
+.footer { position: relative; margin-top: -80px; height: 80px; clear: both; width: 100%; text-align: center; vertical-align: middle; background-color: #141414; padding-top: 30px }
+
+/**********************************************/
+/* Below CSS is for the pagination controls  */
+/********************************************/
+#pagination_ctrl { 
+	background-color: #1E1E1E; 
+	padding: 0;
+	text-align: center;	
+	font-family: 'Orbitron';
+}
+#pagination_ctrl > ul {
+	padding: 0;
+	list-style: none;	
+}
+#pagination_ctrl > ul > li {
+	list-style: none;
+	padding: 5px 10px;
+	display: inline-block;
+	color: #FFF;
+	background: #000;
+	font-weight: bold;
+}
+#pagination_ctrl > ul  > a  > li {
+	list-style: none;	
+	padding: 5px 10px;
+	display: inline-block;
+	color: #FFF;
+}
+#pagination_ctrl > ul > a > li:hover {
+	background: green;	
+}
+.pagi_left {
+	float: left !important;
+	font-family: ubuntu;
+}
+.pagi_right {
+	float: right !important;
+	font-family: ubuntu;
+}
+
+/* CSS for icons */
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?-pssym0');
+	src:url('../fonts/icomoon.eot?#iefix-pssym0') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?-pssym0') format('woff'),
+		url('../fonts/icomoon.ttf?-pssym0') format('truetype'),
+		url('../fonts/icomoon.svg?-pssym0#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	
+	/* Enable Ligatures ================ */
+	-webkit-font-feature-settings: "liga";
+	-moz-font-feature-settings: "liga=1";
+	-moz-font-feature-settings: "liga";
+	-ms-font-feature-settings: "liga" 1;
+	-o-font-feature-settings: "liga";
+	font-feature-settings: "liga";
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-pencil:before {
+	content: "\e905";
+	font-size: 13px;
+	color: #FFF;
+}
+
+.icon-stopwatch:before {
+	content: "\e952";
+	font-size: 12px;
+	color: #404040;
+}
+
+.icon-bin:before {
+	content: "\e9ac";
+	font-size: 13px;
+	color: #FFF;
+}
+
+.icon-attachment:before {
+	content: "\e9cd";
+	font-size: 18px;
+	color: #FFF;
+}
+
+div.timer-icon{
+	padding: 5px 0;
+	vertical-align: middle;
+	background: #1E1E1E;
+}
+
+span.date_time {
+	font-size: 12px;
+	color: #AAA;
+	font-family: ubuntu;	
+}
+
+button.icons {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: #1E1E1E;
+	cursor: pointer;
+	padding: 3px 6px;
+	border-radius: 5px;
+}
+
+button.icons:hover {
+	background: #383838;
+	color: #FFF;
+}

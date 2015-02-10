@@ -1,0 +1,23 @@
+Options +FollowSymLinks
+
+RewriteEngine on
+
+RewriteRule ^user/([0-9]+)$ user.php?id=$1
+RewriteRule ^user/([0-9]+)/([0-9]+)$ user.php?id=$1&page=$2
+
+RewriteRule ^page/([0-9]+)$ index.php?page=$1
+RewriteRule ^title/([0-9]+)$ index.php?id=$1
+
+RewriteRule ^edit/([0-9]+)$ edit_post.php?id=$1
+RewriteRule ^delete/([0-9]+)$ delete_post.php?id=$1
+
+RewriteRule ^sign-in$ login.php
+RewriteRule ^sign-up$ register.php
+RewriteRule ^add-post$ add_post.php
+RewriteRule ^change-avatar$ chg_avatar.php
+RewriteRule ^change-password$ chg_pass.php
+RewriteRule ^sign-out$ logout.php
+
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ http://localhost/$1 [R=301,L]
+
