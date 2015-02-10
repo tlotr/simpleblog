@@ -1,5 +1,5 @@
-/*@font-face { font-family: 'Orbitron'; src: url(http://www.tlotrblog.zz.vc/fonts/orbitron-light.otf) }
-@font-face { font-family: Ubuntu; src: url(http://www.tlotrblog.zz.vc/fonts/Ubuntu-R.ttf) }*/
+@font-face { font-family: 'Orbitron'; src: url(http://localhost/fonts/orbitron-light.otf) }
+@font-face { font-family: Ubuntu; src: url(http://localhost/fonts/Ubuntu-R.ttf) }
 
 * { padding: 0; margin: 0 }
 html { height: 100%; }
