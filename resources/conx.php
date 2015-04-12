@@ -1,5 +1,5 @@
 <?php
-require '../config.php'
+require '../config.php';
 if(!isset($config))
 	die("Rename your example.config.php to config.php");
 $db = mysqli_connect($config['db']['host'],$config['db']['username'],$config['db']['password'],$config['db']['database']);
