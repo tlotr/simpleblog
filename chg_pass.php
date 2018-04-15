@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(!isset($_SESSION['user_id'])){
-	header('Location: http://localhost/sign-in');
+	header('Location: http://localhost/simpleblog/sign-in');
 }
 include_once('resources/conx.php');
 $user = $_SESSION['user_id'];
@@ -20,7 +20,7 @@ if($old_pass == $new_pass){
 	mysqli_query($db, "UPDATE users SET password = '$new_pass' WHERE user_id = '$user'");
 	echo "<script>alert('Password Change Successfully!');</script>";
 	session_destroy();
-	echo "<script>location.href='http://localhost/sign-in';</script>";
+	echo "<script>location.href='http://localhost/simpleblog/sign-in';</script>";
 }
 }
 ?>

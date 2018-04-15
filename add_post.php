@@ -2,7 +2,7 @@
 include_once('resources/conx.php');
 session_start();
 if(!isset($_SESSION['user_id'])){
-	header('Location: http://localhost/sign-in');
+	header('Location: http://localhost/simpleblog/sign-in');
 	exit();
 }
 if(isset ($_SESSION['user_id'], $_POST['title'], $_POST['content'])){
@@ -44,7 +44,7 @@ if(isset ($_SESSION['user_id'], $_POST['title'], $_POST['content'])){
 		add_post($db, $user_id, $title, $contents);
 		$file = add_attachment();
 		$id = mysqli_insert_id($db);
-		header("Location: http:/\/localhost/title/{$id}");		
+		header("Location: http:/\/localhost/simpleblog/title/{$id}");		
 	}
 }
 ?>

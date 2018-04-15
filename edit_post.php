@@ -1,7 +1,7 @@
 <?php 
 session_start();
 if(!isset($_SESSION['user_id'])){
-	header('Location: http://localhost/sign-in');
+	header('Location: http://localhost/simpleblog/sign-in');
 	exit();
 }
 include_once('resources/conx.php');
@@ -70,7 +70,7 @@ if(isset ($_POST['title'], $_POST['content'])){
 	if( empty($errors) ){
 	edit_post($db, $_GET['id'], $title, $contents);
 	$file = add_attachment();
-	header("Location: http:/\/localhost/title/{$posts[0]['p_id']}");
+	header("Location: http:/\/localhost/simpleblog/title/{$posts[0]['p_id']}");
 	}
 }
 

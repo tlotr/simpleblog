@@ -2,7 +2,7 @@
 	session_start();
 	include_once('resources/conx.php');
 	if(isset($_SESSION['user_id'])){
-		header("Location: http:/\/localhost/user/{$_SESSION['user_id']}");
+		header("Location: http:/\/localhost/simpleblog/user/{$_SESSION['user_id']}");
 	}
 
 	if(isset($_POST['register'])){
