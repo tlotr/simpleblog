@@ -15,7 +15,7 @@
 <table>
 <tr>
 <td>
-<a href="index.php"><img src="http://localhost/simpleblog/images/logo.png" border="0"></a>
+<a href="http://localhost/simpleblog/"><img src="http://localhost/simpleblog/images/logo.png" border="0"></a>
 </td>
 <?php if(isset($_SESSION['user_id'])){ ?>
 <td align="right">
