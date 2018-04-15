@@ -43,7 +43,7 @@
 	register($db, $user, $pass, $fname, $lname, $email, $gender);
 	$file = add_avatar();
 	echo "<script>alert('Registration Successfully!');</script>";
-	echo "<script>location.href='http://localhost/sign-in';</script>";	
+	echo "<script>location.href='http://localhost/simpleblog/sign-in';</script>";	
 	}	
 }
 ?>

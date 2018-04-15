@@ -2,7 +2,7 @@
 session_start();
 include_once('resources/conx.php');
 if(isset($_SESSION['user_id'])){
-	header("Location: http:/\/localhost/user/{$_SESSION['user_id']}");
+	header("Location: http:/\/localhost/simpleblog/user/{$_SESSION['user_id']}");
 	}
 if(isset($_POST['login'])){
 	$errors = array();
@@ -18,7 +18,7 @@ if(isset($_POST['login'])){
 	$_SESSION['lname'] = $row['lname'];
 	$_SESSION['username'] = $row ['username'];
 	$_SESSION['avatar'] = $row ['avatar'];
-    header("Location: http:/\/localhost/user/{$_SESSION['user_id']}");
+    header("Location: http:/\/localhost/simpleblog/user/{$_SESSION['user_id']}");
 	}
 else {
 		$errors[] = 'Invalid username or password';

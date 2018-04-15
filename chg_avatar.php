@@ -2,7 +2,7 @@
 include_once('resources/conx.php');
 session_start();
 if(!isset($_SESSION['user_id'])){
-	header('Location: http://localhost/sign-in');
+	header('Location: http://localhost/simpleblog/sign-in');
 	exit();
 }
 if(isset($_POST['avatar'])){
@@ -31,7 +31,7 @@ if(isset($_POST['avatar'])){
 		$file = chg_avatar();
 		echo "<script>alert('Avatar Changed Successfully!');</script>";
 		session_destroy();
-		echo "<script>location.href='http://localhost/sign-in';</script>";
+		echo "<script>location.href='http://localhost/simpleblog/sign-in';</script>";
 		}		
 }
 
